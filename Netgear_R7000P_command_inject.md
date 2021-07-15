@@ -27,9 +27,25 @@ Here is a demo:
 
 ![](./images//2021-05-21-15-10-21.png)
 
+To trigger this function, we can use this js, but it need the username and password:
+
+```py
+import requests
+
+url = "http://192.168.1.1/WLG_opmode_scanresults_json.js"
+
+header = {
+    "Authorization": "Basic YWRtaW46MTIzNDU2" # base64(username + password)
+}
+
+requests.get(url=url, headers=header)
+```
+
 With some analysis and debugging, I found this `system()` function only called at `debug mode`(use `nvram set debug_extender=1` to open it), so this vulnerability is harmless that is why I disclose it.
 
 ![](./images//2021-5-21-15-01-40.png)
+
+
 
 ## Affect Versions
 
