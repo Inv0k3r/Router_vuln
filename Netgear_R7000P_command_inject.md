@@ -27,7 +27,7 @@ Here is a demo:
 
 ![](./images//2021-05-21-15-10-21.png)
 
-To trigger this function, we can use this js, but it need the username and password:
+To trigger this function, we can use this js, but it needs the username and password:
 
 ```py
 import requests
@@ -41,7 +41,7 @@ header = {
 requests.get(url=url, headers=header)
 ```
 
-With some analysis and debugging, I found this `system()` function only called at `debug mode`(use `nvram set debug_extender=1` to open it), so this vulnerability is harmless that is why I disclose it.
+With some analysis and debugging, I found this `system()` function only called at `debug mode`(use `nvram set debug_extender=1` to open it), so this vulnerability is hard to exploit :)
 
 ![](./images//2021-5-21-15-01-40.png)
 
