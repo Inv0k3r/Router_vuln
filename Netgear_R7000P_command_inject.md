@@ -41,11 +41,9 @@ header = {
 requests.get(url=url, headers=header)
 ```
 
-With some analysis and debugging, I found this `system()` function only called at `debug mode`(use `nvram set debug_extender=1` to open it), so this vulnerability is hard to exploit :)
+With some analysis and debugging, I found this `system()` function only called at `debug mode`(use `nvram set debug_extender=1` to open it), so this vulnerability is hard to exploit and limited :)
 
 ![](./images//2021-5-21-15-01-40.png)
-
-
 
 ## Affect Versions
 
