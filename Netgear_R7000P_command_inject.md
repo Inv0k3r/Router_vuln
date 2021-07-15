@@ -34,4 +34,5 @@ With some analysis and debugging, I found this `system()` function only called a
 ## Affect Versions
 
 Device: Netgear R7000P
+
 Firmware: [R7000P-V1.3.2.134_10.1.66](https://www.downloads.netgear.com/files/GDC/R7000P/R7000P-V1.3.2.134_10.1.66.zip)
